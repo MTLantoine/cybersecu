@@ -37,6 +37,7 @@ _POST créer une commande_
 > http://localhost:5050/commande/add-command/_ID-de-l'article-souhaité_/_quantité_
 
 _exemple :_
+
 > http://localhost:5050/commande/add-command/1/50
 
 _GET commandes_
@@ -53,6 +54,7 @@ _POST acheter commande_
 > http://localhost:5050/client/_ID-du-client-qui-achete_/buy-command
 
 _exemple :_
+
 > http://localhost:5050/client/1/buy-command
 > Une commande peut être achetée seulement et seulement si elle a été créée.
 
@@ -66,7 +68,7 @@ _GET reductions_
 
 # Surface d'attaque
 
-Fichier mermaidjs dans ./surface_attaque.png
+![Screenshot](surface_attaque.png)
 
 # Objectifs de sécurité
 
