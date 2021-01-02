@@ -64,6 +64,10 @@ _GET reductions_
 
 > http://localhost:5050/reduction
 
+# Surface d'attaque
+
+Fichier mermaidjs dans ./surface_attaque.png
+
 # Objectifs de sécurité
 
 **Confidentialité**
