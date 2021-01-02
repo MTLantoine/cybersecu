@@ -101,3 +101,7 @@ Les commandes faites par un client ont plus d'intêret à être visible uniqueme
 La traçabilité consiste à créer un "historique" de qui est passé sur une application, qui a fait des modifications, où et quand.
 
 Dans ce projet, si une commande a été modifiée à l'insu d'un client, il aimerai savoir quand la modification en question a été réalisée et où afin de se faire une idée de qui aurai pu faire la modification.
+
+# Autheur
+
+Antoine MORTELIER
