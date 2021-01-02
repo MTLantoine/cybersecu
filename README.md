@@ -48,6 +48,14 @@ _GET articles_
 
 > http://localhost:5050/article
 
+_POST acheter commande_
+
+> http://localhost:5050/client/<ID-du-client-qui-achete>/buy-command
+
+_exemple :_
+> http://localhost:5050/client/1/buy-command
+> Une commande peut être achetée seulement et seulement si elle a été créée.
+
 _GET stocks_
 
 > http://localhost:5050/stock
