@@ -79,6 +79,7 @@ Par exemple : Un mot de passe, une adresse ou encore un numéro de téléphone.
 
 Dans ce projet, un client ne veut pas que ses commandes et informations privées soient visibles de tous.
 Des mots de passes et des gestions de compte doivent être instaurés.
+(4/5)
 
 **Intégrité**
 
@@ -86,6 +87,7 @@ L'intégrité consiste à ce qu'une information ne soit pas modifiée frauduleus
 Par exemple : On ne veut pas que notre mot de passe soit changé par une personne tierse à notre insu.
 
 Dans ce projet, l'idée est de s'assurer qu'une commande d'un client peut être modifiée par lui et seulement lui.
+(5/5)
 
 **Disponibilité**
 
@@ -95,12 +97,14 @@ L’importance de la disponibilité d’une information varie suivant les besoin
 Dans ce projet, les articles présents en magasin doivent être visible pour tous les clients (et non clients),
 les articles en rupture de stocks n'ont pas d'utilité à ce qu'ils soient visibles par qui que ce soit.
 Les commandes faites par un client ont plus d'intêret à être visible uniquement pour le client qui l'a créée et pas un autre.
+(3/5)
 
 **Traçabilité**
 
 La traçabilité consiste à créer un "historique" de qui est passé sur une application, qui a fait des modifications, où et quand.
 
 Dans ce projet, si une commande a été modifiée à l'insu d'un client, il aimerai savoir quand la modification en question a été réalisée et où afin de se faire une idée de qui aurai pu faire la modification.
+(0/5)
 
 # Autheur
 
