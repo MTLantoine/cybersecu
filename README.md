@@ -26,34 +26,34 @@ Vous pouvez "GET" les éléments que vous désirez en allant sur les liens suiva
 
 _GET catalogue_
 
-> $ http://localhost:5050/catalogue
+> http://localhost:5050/catalogue
 
 _GET clients_
 
-> $ http://localhost:5050/client
+> http://localhost:5050/client
 
 _POST créer une commande_
 
-> $ http://localhost:5050/commande/add-command/<ID-de-l'article-souhaité>/<quantité>
-> _exemple :_
-> $ http://localhost:5050/commande/add-command/1/50
+> http://localhost:5050/commande/add-command/<ID-de-l'article-souhaité>/<quantité>
+_exemple :_
+> http://localhost:5050/commande/add-command/1/50
 
 _GET commandes_
 
-> $ http://localhost:5050/commande
+> http://localhost:5050/commande
 > Une commande n'existe que si elle a été créée.
 
 _GET articles_
 
-> $ http://localhost:5050/article
+> http://localhost:5050/article
 
 _GET stocks_
 
-> $ http://localhost:5050/stock
+> http://localhost:5050/stock
 
 _GET reductions_
 
-> $ http://localhost:5050/reduction
+> http://localhost:5050/reduction
 
 # Objectifs de sécurité
 
