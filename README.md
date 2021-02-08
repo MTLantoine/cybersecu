@@ -70,7 +70,7 @@ _GET reductions_
 
 **Import the following file in Insomnia/Postman for the tests**
 
-> $ tests/API_test.json
+> tests/API_test.json
 
 # Analyse/Vulnérabilités
 
