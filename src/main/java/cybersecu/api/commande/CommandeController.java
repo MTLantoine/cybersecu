@@ -24,6 +24,7 @@ public class CommandeController {
     @Autowired
     private ArticleRepository articleRepository;
 
+    // Crée une commande faite de {quantity} d'{articleId}
     @PostMapping("add-command/{articleId}/{quantity}")
     public ResponseEntity<Commande> addCommand(@PathVariable("articleId") int articleId, @PathVariable("quantity") int quantity) {
         Commande command = commandeRepository.findById(1).isPresent() ? commandeRepository.findById(1).get() : new Commande();

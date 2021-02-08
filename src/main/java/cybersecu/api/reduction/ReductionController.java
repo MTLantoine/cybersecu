@@ -15,6 +15,7 @@ public class ReductionController {
     @Autowired
     private ReductionRepository reductionRepository;
 
+    // Récupère la reduction par son pourcentage de réduction
     @GetMapping("find-by-percent/{percent}")
     public Set<Reduction> getReductionByPercent(@PathVariable("percent") int percent) {
         return reductionRepository.findByPercent(percent);

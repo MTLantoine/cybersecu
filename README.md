@@ -66,9 +66,29 @@ _GET reductions_
 
 > http://localhost:5050/reduction
 
+# Tests
+
+**Import the following file in Insomnia/Postman for the tests**
+
+> $ tests/API_test.json
+
+# Analyse/Vulnérabilités
+
+- L'application n'a pas de service d'authentification, tout le monde pourrai accéder aux commandes de tout le monde, un système comme OAuth 2.0 serait à privilégier pour avoir un bon niveau de sécuritié.
+
+- Il est possible pour un client de récupérer la commande payée par un autre client, un service d'utilisateurs est nécessaire.
+
+- Pour limiter les DOS, on peut limiter la taille maximale du contenu du payload et bloquer un utilisateur pendant un certain temps s'il fait trop de requêtes grâce à express-rate-limit.
+
+- [express-validator](https://www.npmjs.com/package/express-validator) permet de limiter les XSS en vérifiant les données envoyées, par exemple le contenu d'un formulaire de connexion, on pourrait aussi utiliser des regex pour valider les données.
+
 # Surface d'attaque
 
-![Screenshot](surface_attaque.png)
+![Screenshot](assets/surface_attaque.png)
+
+# MermaidJS
+
+![Screenshot](assets/mermaid.png)
 
 # Objectifs de sécurité
 

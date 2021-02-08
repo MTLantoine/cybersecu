@@ -15,6 +15,7 @@ public class StockController {
     @Autowired
     private StockRepository stockRepository;
 
+    // Récupère le stock par sa quantité
     @GetMapping("find-by-quantity/{quantity}")
     public Set<Stock> getStockByQuantity(@PathVariable("quantity") int quantity) {
         return stockRepository.findByQuantity(quantity);

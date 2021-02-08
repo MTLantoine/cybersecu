@@ -15,6 +15,7 @@ public class ArticleController {
     @Autowired
     private ArticleRepository articleRepository;
 
+    // Récupère l'article par son nom
     @GetMapping("find-by-name/{name}")
     public Optional<Article> getArticleByName(@PathVariable("name") String name) {
         return articleRepository.findByName(name);

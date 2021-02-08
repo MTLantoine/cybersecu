@@ -15,6 +15,7 @@ public class CatalogueController {
     @Autowired
     private CatalogueRepository catalogueRepository;
 
+    // Récupère les articles dont le stock n'est pas vide
     @GetMapping
     public Stream<Stock> getNotEmptyStock() {
         return catalogueRepository.findById(1).get().getStock().stream().filter(stock -> stock.getQuantity() > 0);

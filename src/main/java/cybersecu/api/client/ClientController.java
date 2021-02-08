@@ -21,11 +21,13 @@ public class ClientController {
     @Autowired
     private CommandeRepository commandeRepository;
 
+    // Récupère le client par son login
     @GetMapping("find-by-login/{login}")
     public Optional<Client> getClientByLogin(@PathVariable("login") String lastname) {
         return clientRepository.findByLogin(lastname);
     }
 
+    // Achete une commande pour un client
     @PostMapping("{clientId}/buy-command")
     public ResponseEntity<Client> clientBuyProduct(@PathVariable("clientId") int clientId) throws NoExistingCommandException, NotEnoughMoneyException {
         Client client = clientRepository.findById(clientId).get();
