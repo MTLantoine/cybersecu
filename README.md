@@ -80,8 +80,6 @@ _GET reductions_
 
 - Pour limiter les DOS, on peut limiter la taille maximale du contenu du payload et bloquer un utilisateur pendant un certain temps s'il fait trop de requêtes grâce à express-rate-limit.
 
-- [express-validator](https://www.npmjs.com/package/express-validator) permet de limiter les XSS en vérifiant les données envoyées, par exemple le contenu d'un formulaire de connexion, on pourrait aussi utiliser des regex pour valider les données.
-
 # Surface d'attaque
 
 ![Screenshot](assets/surface_attaque.png)
