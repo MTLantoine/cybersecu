@@ -80,6 +80,12 @@ _GET reductions_
 
 - Pour limiter les DOS, on peut limiter la taille maximale du contenu du payload et bloquer un utilisateur pendant un certain temps s'il fait trop de requêtes grâce à express-rate-limit.
 
+- Chaque donnée est typée, on est vite limité pour les injections.
+
+- Spring Boot sécurise l'application de base, les injections sont donc limitées
+
+- Les controller à chaque classe permettent de personnaliser chaque endpoint et de limiter l'accès à certains éléments du repertoire.
+
 # Surface d'attaque
 
 ![Screenshot](assets/surface_attaque.png)
